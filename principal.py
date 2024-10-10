@@ -9,11 +9,11 @@ def recebe_aposta():
 lista_completa = []
 with open("resultados.csv", mode="r") as arquivo_csv:
     leitor_csv = csv.reader(arquivo_csv)
+    print(leitor_csv)
     for linha in leitor_csv:
         lista_completa.append(linha)
 
 #print(lista_completa)
 aposta = recebe_aposta()
 
-for concurso in lista_completa:
-    
+#for concurso in lista_completa:
